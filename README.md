@@ -21,7 +21,7 @@
 ## Working Algorithm 
   Step1: double-click the sys_info_setup.py.
   Step2: sys_info_setup.py -> requirment_installer.py, 
-  &nbsp&nbsp&nbsp&nbsp install required modules 
+  &nbsp;&nbsp;&nbsp;&nbsp; install required modules 
   Step3: 
   
 ## Notes
