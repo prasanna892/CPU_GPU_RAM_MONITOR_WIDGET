@@ -19,7 +19,10 @@
   6) Nice look animation😁
   
 ## Working Algorithm 
-  step1: double-click the sys_info_setup.py.
+  Step1: double-click the sys_info_setup.py.
+  Step2: sys_info_setup.py -> requirment_installer.py, 
+  nbspnbspnbspnbsp install required modules
+  Step3: 
   
 ## Notes
   1) Some times the widget did not pop up at first setup run beacuse of any antivirus app you installed in your system
