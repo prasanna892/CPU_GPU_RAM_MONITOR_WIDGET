@@ -33,13 +33,13 @@
   12) ends
   
 ## Notes
-  1) Some times the widget did not pop up at first setup run beacuse of any antivirus app you installed in your system
-  2) Do not move the folder after running sys_info_setup.py file. If you do that, working directory error will accure. Then widget can crash. 
-  3) If you want to move the folder first run Delete_SetUp.py and then .move the folder where you want to move and re-run the sys_info_setup.py to re-assign the new path.
-  4) I used OpenHardware.dll file for this project. You can get this from https://openhardwaremonitor.org/ 
+  ※ Some times the widget did not pop up at first setup run beacuse of any antivirus app you installed in your system
+  ※ Do not move the folder after running sys_info_setup.py file. If you do that, working directory error will accure. Then widget can crash. 
+  ※ If you want to move the folder first run Delete_SetUp.py and then .move the folder where you want to move and re-run the sys_info_setup.py to re-assign the new path.
+  ※ I used OpenHardware.dll file for this project. You can get this from https://openhardwaremonitor.org/ 
 
 ## Requirement 
-  python3
+  ※ python3
 
 ## Contact 
 
