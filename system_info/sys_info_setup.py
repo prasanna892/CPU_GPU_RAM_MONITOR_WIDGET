@@ -107,7 +107,7 @@ def exclude_folder():
 # adding sys_info.pyw to registry for start automaticaly when system start
 def set_startup():
     import regidit_edit as re
-    re.AddToRegistry(os.path.join(os.getcwd(), 'sys_info.py'), "tempInfo")
+    re.AddToRegistry(os.path.join(os.getcwd(), 'sys_info.pyw'), "tempInfo")
 
 # main program
 def main():
