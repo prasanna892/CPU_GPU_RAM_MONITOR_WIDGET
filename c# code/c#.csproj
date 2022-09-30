@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <Reference Include="OpenHardwareMonitorLib" />
+  
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <OutputPath>bin\Release\</OutputPath>
+    <AssemblyName>TempINFO</AssemblyName>
+    <TargetFramework>net4.7</TargetFramework>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace>c_</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+</Project>
