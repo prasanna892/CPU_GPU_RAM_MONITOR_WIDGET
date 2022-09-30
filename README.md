@@ -19,10 +19,18 @@
   6) Nice look animation😁
   
 ## Working Algorithm 
-  Step1: double-click the sys_info_setup.py.
-  Step2: sys_info_setup.py -> requirment_installer.py, 
-  &nbsp;&nbsp;&nbsp;&nbsp; install required modules 
-  Step3: 
+  1) When you Double-Click the sys_info_setup.py, it call requirment_installer.py to install required modules.
+  2) It check for run asAdmin if not ask permission.
+  3) If user give permission, it schedule TempINFO.exe file (system_info/assets/TempInfo) to task scheduler for bipass administrator mode.
+  4) Create scheduled task shortcut in assets folder with name of 'TempInfo.lnk'.
+  5) Exclude working directory folder from windows virus & threat production.
+  6) Add sys_info.pyw to registry for start automaticaly when system startup
+  7) Call sys_info.pyw -> load() to run
+  8) sys_info.pyw run TempInfo.lnk file -> TempINFO.exe generates result.json file.
+  9) sys_info.pyw read's result.json file and get information then display.
+  10) Update information at every 1sec.
+  11) On system ShurtDown sys_info.pyw terminate TempINFO.exe and update current position in property.json then exit
+  12) ends
   
 ## Notes
   1) Some times the widget did not pop up at first setup run beacuse of any antivirus app you installed in your system
