@@ -32,9 +32,7 @@
   ⇒ On system ShurtDown sys_info.pyw terminate TempINFO.exe and update current position in property.json then exit. <br>
   ⇒ ends. <br>
   
-## Video
 
-<video src='https://github.com/prasanna892/CPU_GPU_RAM_MONITOR_WIDGET/blob/main/sysInfo.mp4' width=180/>
   
 ## Notes
   ⇾ Some times the widget did not pop up at first setup run beacuse of any antivirus app you installed in your system. <br>
