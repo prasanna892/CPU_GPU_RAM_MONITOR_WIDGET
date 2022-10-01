@@ -14,8 +14,8 @@
   ⋙ It automatically pop up when you start up or restart of your system. <br>
   ⋙ It show info about CPU, GPU, RAM and DISK usage, temperature, consuming wattage. <br>
   ⋙ Double any where to see more info about CPU, GPU, RAM and DISK usage. <br>
-  ⋙ As the TempINFO.exe file generate result.json file you can also use it for your project. <br>
-  ⋙ TempInfo.exe also provide moreInfo.txt file for more information of your system deatials and performance. <br>
+  ⋙ As the TempINFO.exe file generate result.json under system_info/assets/TempINFO folder file you can also use it for your project. <br>
+  ⋙ TempInfo.exe also provide moreInfo.txt file under system_info/assets/TempINFO folder for more information of your system deatials and performance. <br>
   ⋙ It automaticaly store the last position and size in property.json file before close, So it can able to open in last position when close. <br>
   ⋙ Nice look animation😁 <br>
   
