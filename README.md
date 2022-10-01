@@ -1,4 +1,4 @@
-# CPU_GPU_RAM_MONITOR_APPLICATION
+# CPU_GPU_RAM_MONITOR_WIDGET
 
 ## Set-Up
   ↠ Open system_info folder. <br>
