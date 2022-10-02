@@ -42,7 +42,7 @@
   ⇾ Some times the widget did not pop up at first setup run beacuse of any antivirus app you installed in your system. <br>
   ⇾ Do not move the folder after running sys_info_setup.py file. If you do that, working directory error will accure. Then widget can crash. <br>
   ⇾ If you want to move the folder first run Delete_SetUp.py and then .move the folder where you want to move and re-run sys_info_setup.py to re-assign the new path. <br>
-  ⇾ I used OpenHardware.dll file for this project. You can get this from https://openhardwaremonitor.org/ 
+  ⇾ I used OpenHardware.dll file for this project. You can get this from https://openhardwaremonitor.org/ <br>
   ⇾ Do not close TempINFO.exe console window on start-up. <br>
   ⇾ TempINFO.exe window automaticaly close after start-up within few seconds.
 
