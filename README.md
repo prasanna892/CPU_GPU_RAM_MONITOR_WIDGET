@@ -17,6 +17,7 @@
   ⋙ As the TempINFO.exe file generate result.json under system_info/assets/TempINFO folder file you can also use it for your project. <br>
   ⋙ TempInfo.exe also provide moreInfo.txt file under system_info/assets/TempINFO folder for more information of your system deatials and performance. <br>
   ⋙ It automaticaly store the last position and size in property.json file before close, So it can able to open in last position when close. <br>
+  ⋙ Press ESC to close. <br>
   ⋙ Nice look animation😁 <br>
   
 ## Working Algorithm 
@@ -42,6 +43,8 @@
   ⇾ Do not move the folder after running sys_info_setup.py file. If you do that, working directory error will accure. Then widget can crash. <br>
   ⇾ If you want to move the folder first run Delete_SetUp.py and then .move the folder where you want to move and re-run sys_info_setup.py to re-assign the new path. <br>
   ⇾ I used OpenHardware.dll file for this project. You can get this from https://openhardwaremonitor.org/ 
+  ⇾ Do not close TempINFO.exe console window on start-up. <br>
+  ⇾ TempINFO.exe window automaticaly close after start-up within few seconds.
 
 ## Requirement 
   ≫ python3
