@@ -1,4 +1,6 @@
 # importing required module
+import subprocess
+import traceback
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -610,6 +612,16 @@ class SysInfo(QWidget):
     def mousePressEvent(self, event):
         self.oldPos = event.globalPos()
 
+    # catch mouse relese event occure
+    def mouseReleaseEvent(self, event):
+        # assiging current window position
+        self.data['position']["x_pos"] = self.pos().x()
+        self.data['position']["y_pos"] = self.pos().y()
+        # rewriting property.json
+        with open('./assets/property.json', 'w') as file:
+            json.dump(self.data, file, indent = 4)
+            file.close()
+
     # catch mouse move event occure
     def mouseMoveEvent(self, event):
         delta = QPoint (event.globalPos() - self.oldPos)
@@ -629,15 +641,8 @@ class SysInfo(QWidget):
     def finish(self):
         QCoreApplication.instance().quit()  # quit window
         self.result_file.close() # closing result.json file
-        # assiging current window position
-        self.data['position']["x_pos"] = self.pos().x()
-        self.data['position']["y_pos"] = self.pos().y()
-        # rewriting property.json
-        with open('./assets/property.json', 'w') as file:
-            json.dump(self.data, file, indent = 4)
-            file.close()
 
-        close_TempINFO()
+        close_TempINFO() # close TempINFO.exe file
 
 # function for closing TempINFO.exe using PID
 def close_TempINFO():
@@ -664,7 +669,7 @@ def implicite_wait(file):
 # function to set working directory
 def set_wd():
     # key we want to get value is HKEY_CURRENT_USER
-	# key value is Software\Microsoft\Windows\CurrentVersion\App Paths\tempInfo.py
+    # key value is Software\Microsoft\Windows\CurrentVersion\App Paths\tempInfo.py
     path = reg.HKEY_CURRENT_USER
     app_path = r"Software\Microsoft\Windows\CurrentVersion\App Paths\tempInfo.py"
 
@@ -693,8 +698,14 @@ def load():
 def main():
     # set working directory
     set_wd()
-
+    
     load()
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except: # if any error occurs it write occurred error message in errLog.txt file
+        error = traceback.format_exc()
+        with open('./assets/errLog.txt', 'w') as file:
+            file.writelines(error)
+            file.close()
