@@ -39,6 +39,7 @@ class SysInfo(QWidget):
         
         # setting screen geomentry
         self.setGeometry(self.pos_x, self.pos_y, self.screen_width, self.screen_height)
+	self.setFixedSize(self.screen_width, self.screen_height)
 
         # getting GPU present info from result.json
         with open('./assets/TempINFO/result.json') as self.result_file:
