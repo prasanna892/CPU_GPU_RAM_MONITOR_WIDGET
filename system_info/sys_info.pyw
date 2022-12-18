@@ -665,7 +665,7 @@ def implicite_wait(file):
         return True
     else:
         sleep(0.5)
-        implicite_wait(file)
+        return implicite_wait(file)
 
 # function to set working directory
 def set_wd():
