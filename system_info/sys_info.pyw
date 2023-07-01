@@ -1,5 +1,4 @@
 # importing required module
-import subprocess
 import traceback
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -15,6 +14,7 @@ from pathlib import Path
 import winreg as reg	
 import sys
 from time import sleep
+from datetime import date
 
 # Creating SysInfo class
 class SysInfo(QWidget):
@@ -708,5 +708,5 @@ if __name__ == '__main__':
     except: # if any error occurs it write occurred error message in errLog.txt file
         error = traceback.format_exc()
         with open('./assets/errLog.txt', 'w') as file:
-            file.writelines(error)
+            file.writelines("Reported date: "+date.today()+"\n"+error)
             file.close()
