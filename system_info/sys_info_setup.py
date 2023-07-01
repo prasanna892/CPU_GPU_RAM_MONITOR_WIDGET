@@ -2,7 +2,7 @@
 import requirment_installer as ri
 # calling install function from requirment_installer 
 # to install requirment bebore run
-ri.install(["pypiwin32", "PyQt5", "screeninfo", "psutil"])
+ri.install(["pypiwin32", "PyQt5", "psutil"])
 
 
 # importing required module
