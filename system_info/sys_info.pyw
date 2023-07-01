@@ -3,7 +3,6 @@ import traceback
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from screeninfo import get_monitors
 import psutil
 from psutil._common import bytes2human
 from collections import Counter
